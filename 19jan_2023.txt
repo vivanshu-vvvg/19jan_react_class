@@ -1,0 +1,68 @@
+Q1. Describe higher order function.
+
+ Ans->
+ Higher order function can pass another function as a input in parameter, and it also enhances the execution speed of our code.
+  Types of Higher order function are :-
+     1. Map
+     2.Filter
+     3.reduce
+     4. sort
+     5. For Each
+
+   Example of higher order function using filter:-
+    // It is an example of finding odd number
+
+   const num1 = [1, 2, 3, 4, 5];
+
+   const oddArr = num1.filter((number) => number % 2 !== 0);
+   console.log(oddArr); 
+
+Q2.  write use cases + any one code example for map, filter and reduce.
+
+    ##  map --> The map() method calls a callback function on every element of an array and returns a new array that contains the results.
+
+        code for Map function:--
+
+        const num1 = [2, 3, 4];
+        const doubles = num1.map(function mapper(number) {
+        return 2 * number;
+        });
+        console.log(doubles);
+
+        output==> [Running] node "c:\Users\94167\OneDrive\Desktop\Doubt\index.js"
+        [ 4, 6, 8 ]
+
+    [Done] exited with code=0 in 0.334 seconds
+
+    ## Filter --> filter() does not execute the function for array elements without values and doesn't change the original array.
+        filter() returns a new array of filter elements that meet a certain condition. The filter() method creates a new array with all elements that pass the test implemented by the provided function.
+
+        code for filter function :--
+
+        let arr=[1,2,3,4,5];
+
+        const giveOdd = arr.filter((num)=>{
+            return num%2===1;
+        });
+        console.log(giveOdd);
+
+        Output --> [Running] node "c:\Users\94167\OneDrive\Desktop\Doubt\index.js"
+        [ 1, 3, 5 ]
+
+    [Done] exited with code=0 in 0.135 seconds
+
+    ## Reduce --> The reduce() method executes a reducer function (that you provide) on each element of the array, resulting in a single output value. The reduce() method executes a provided function for each value of the array (from left-to-right).
+
+        code for Reduce function :--
+
+        let arr=[1,2,3,4,5];
+
+        const sum = arr.reduce((acc, num)=>{
+            return acc += num;
+        }, 0);
+        console.log(sum);
+
+        Output --> [Running] node "c:\Users\94167\OneDrive\Desktop\Doubt\index.js"
+        15
+
+    [Done] exited with code=0 in 0.111 seconds
